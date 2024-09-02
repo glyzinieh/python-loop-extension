@@ -1,10 +1,8 @@
-class DoWhile:
+class LoopEx:
     def __init__(self):
-        self.first = True
+        self.index = 0
 
     def do_while(self, condition):
-        if self.first:
-            self.first = False
-            return True
-        else:
-            return condition
+        r = True if self.index == 0 else condition
+        self.index += 1
+        return r
